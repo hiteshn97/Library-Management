@@ -1,0 +1,18 @@
+Problem Statement:
+
+Agile Library Management:
+Agile Library management is a fully robust library managemenet system which provides various features including checking whether the book is available, where it is, if available.
+
+The Library consists of books. Each book can be uniquely identified by the book id. Accompanying book ID is the book name, book author, and the price of the book at which it was purchased by the Library. This is essential for maintinaing the database of the library.
+Books can be divided in certain categories according to their type.
+Also, there is an origin_date which stores the date of origin of book. i.e. the date on which the book was purchased. To see whether the book is being used or not, there is a last_issued field which gets updated eveytime the book is issued. And when a student wishes to find the book, there is a current_status which tells whether the book is inside or outside.
+
+Just like the books, we have the magazine. While storing the magazine in the database, it is essential to store their Title, and magazine's category. Now magazines are a monthly edition, so they expire after a month. To show this there is a attribute of relevance date. This date can be seen when deciding on whether to throw the magazine away or keep it.
+
+We also have place for newspapers in our library management system. The newspaper has a title, and date. Since newspapers will be changed daily, there was no need to store their relevance date. There is also an attribute for news_category.
+
+Then, we have a librarian. Librarian is accompanied by his/her name, email_id. Her task is to store the books and see to it that they are registered.
+
+We then have a receipent. Receipent can be of 2 categories, Staff, Student. All recepients can book at max 2 books and those 2 books will be sotred corresponding to their receipent ID. The receipent ID is accompanied by receipent name, recepient advance for borrowing books. We also stroe the email_id  of the registrants and their join_date.
+
+Thie final is the issue table. This consists of issue ID, issue start, issue end dates. It also tells whether the issue has been returned or not by storing the status of the book. The current_status is stored as a Char Field. Late fee is also imposed on the late returners and this data is stored a s a float_field.
