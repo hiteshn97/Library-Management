@@ -1,0 +1,5 @@
+<h2><a href="/my_library/inside">Welcome!</a></h2>
+{% for name in users %}
+	<li><a href="/my_library/{{name.receipent_name}}/">{{ name.receipent_name }}</a></li>
+{% endfor %}
+

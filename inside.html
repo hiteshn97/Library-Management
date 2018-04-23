@@ -1,0 +1,30 @@
+<h1> Hello {{user.receipent_name}}</h1> 
+
+<h2> Users- </h2>
+{% for user in Users %}
+
+   		<li><a href="/my_library/{{ 	user.receipent_name}}/">{{ user.receipent_name }}</a></li>
+	
+{% endfor %}
+
+<h2>Available books:</h2>
+{% for my_book in Books %}
+	{% if my_book.quantity %}
+		<li><a href="/my_library/books/{{ my_book.title}}/">{{ my_book.title }}</a></li>
+	{% endif %}
+{% endfor %}
+
+<h2>Unavailable books:</h2>
+{% for my_book in Books %}
+	{% if not my_book.quantity %}
+		<li><a href="/my_library/books/{{ my_book.title}}/">{{ my_book.title }}</a></li>
+	{% endif %}
+{% endfor %}
+
+<!-- make a form to accept the user id.
+	A list of issued books by user, append book.
+	A list of users who have issued the book. append book -->
+
+<!-- make a form to accept the user id. And return book to that user id 
+	Now the user can issue another book.
+-->

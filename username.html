@@ -1,0 +1,15 @@
+Hello {{username.receipent_name}}
+
+<h2> Issue </h2>
+{% for book in books %}
+   <li><a href="/my_library/{{username}}/issue/{{ book.title }}/">Issue {{ book.title }}</a> remaining {{book.quantity}}</li>
+{% endfor %}
+<!-- make a form to accept the user id.
+	A list of issued books by user, append book.
+	A list of users who have issued the book. append book -->
+
+<h2>returns</h2>
+<a href="/my_library/{{username}}/returns/">Return {{username.book_name}} </a>
+<!-- make a form to accept the user id. And return book to that user id 
+	Now the user can issue another book.
+-->
