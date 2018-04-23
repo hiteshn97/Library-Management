@@ -1,15 +1,42 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<div class=container>
+<style>
+.green-background {
+    background-color: green;
+  }
+  .first {
+  	color:#EEEEEE;
+  }
+  .second {
+  	color:yellow;
+  }
+</style>
+<div class="container green-background" color="blue">
 	<div style="clear: both">
-    <h2 style="float: left">Book name:</h2>
-    <h2 style="float: left">{{books.title}}</h2>
+    <h2 class="first" style="float: left">Book name: </h2>
+    <h2 class="second" style="float: left">{{books.title}}</h2>
 	</div>
 <br/>
 <hr/>
-<h4>Author</h4>{{books.author}}
-<h4>Price</h4>{{books.price}}
-<h4>Quantity remaining</h4>{{books.quantity}}
-<h4>Origin date</h4>{{books.origin_date}}
-<h4>last_issued</h4>{{books.last_issued}}
+	<div style="clear: both">
+    <h2 class="first" style="float: left">Author: </h2>
+    <h2 class="second" style="float: left">{{books.author}}</h2>
+	</div>
+
+<div style="clear: both">
+    <h2  class="first" style="float: left">Price: </h2>
+    <h2 class="second" style="float: left">{{books.price}}</h2>
+	</div>
+	<div style="clear: both">
+    <h2  class="first" style="float: left">Books Remaining: </h2>
+    <h2 class="second" style="float: left">{{books.quantity}}</h2>
+	</div>
+	<div style="clear: both">
+    <h2  class="first" style="float: left">Author name: </h2>
+    <h2 class="second" style="float: left">{{books.author}}</h2>
+	</div>
+	<div style="clear: both">
+    <h2  class="first" style="float: left">Last_issued: </h2>
+    <h2 class="second" style="float: left">{{books.last_issued}}</h2>
+	</div>
 </div>
